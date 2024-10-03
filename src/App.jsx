@@ -39,7 +39,6 @@ function Home() {
           </div>
           <Input type='email' placeholder='E-mail do Usuário'/>
 
-
         </ContainerInputs>
 
         <Button>Cadastrar Usuários</Button>
