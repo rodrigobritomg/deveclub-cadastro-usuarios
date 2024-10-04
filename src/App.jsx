@@ -1,11 +1,14 @@
-import { Title, Container, TopBackgrond, Form, ContainerInputs, Input, InputLabel, Button } from "./styles"
+import { Title, Container, TopBackgrond, Form, ContainerInputs, Input, InputLabel, Button, } from "./styles"
+
+import UsersImage from './assets/users.png'
+
 function Home() {
 
   return (
     <Container>
 
       <TopBackgrond>
-        <img />
+        <img src={UsersImage} alt="imagem-usuario" />
       </TopBackgrond>
 
       <Form>
@@ -13,7 +16,6 @@ function Home() {
 
         <ContainerInputs>
 
-          <div>
             <div>
               <InputLabel>
                 Nome<span>*</span>
@@ -26,22 +28,18 @@ function Home() {
                 Idade<span>*</span>
               </InputLabel>
               <Input type='number' placeholder='Idade do Usuário' />
-
             </div>
+          
+            </ContainerInputs>
 
-            <div>
+            <div style={{width:'100%'}}>
               <InputLabel>
                 E-mail<span>*</span>
               </InputLabel>
               <Input type='email' placeholder='E-mail do Usuário' />
             </div>
-
-          </div>
-          <Input type='email' placeholder='E-mail do Usuário' />
-
-        </ContainerInputs>
-
-        <Button>Cadastrar Usuários</Button>
+          
+       <Button>Cadastrar Usuários</Button>
 
       </Form>
     </Container>
