@@ -1,4 +1,4 @@
-import { Title, Container, TopBackgrond, Form, ContainerInputs, Input, InputLabel,  } from "./styles"
+import { Title, Container, TopBackgrond, Form, ContainerInputs, Input, InputLabel, Button } from "./styles"
 function Home() {
 
   return (
