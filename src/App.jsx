@@ -1,4 +1,4 @@
-import { Title, Container, TopBackgrond, ContainerInputs, InputLabel, Input } from "./styles"
+import { Title, Container, TopBackgrond, Form, ContainerInputs, Input, InputLabel,  } from "./styles"
 function Home() {
 
   return (
@@ -18,14 +18,14 @@ function Home() {
               <InputLabel>
                 Nome<span>*</span>
               </InputLabel>
-              <Input type='text' placeholder='Nome do Usuário'/>
+              <Input type='text' placeholder='Nome do Usuário' />
             </div>
 
             <div>
               <InputLabel>
                 Idade<span>*</span>
               </InputLabel>
-              <Input type='number' placeholder='Idade do Usuário'/>
+              <Input type='number' placeholder='Idade do Usuário' />
 
             </div>
 
@@ -33,16 +33,15 @@ function Home() {
               <InputLabel>
                 E-mail<span>*</span>
               </InputLabel>
-              <Input type='email' placeholder='E-mail do Usuário'/>
+              <Input type='email' placeholder='E-mail do Usuário' />
             </div>
 
           </div>
-          <Input type='email' placeholder='E-mail do Usuário'/>
+          <Input type='email' placeholder='E-mail do Usuário' />
 
         </ContainerInputs>
 
         <Button>Cadastrar Usuários</Button>
-
 
       </Form>
     </Container>
