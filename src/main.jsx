@@ -7,7 +7,7 @@ import Home from './pages/Home'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <GlobalStyles/>
-    <Home/>
+    <GlobalStyles />
+    <Home />
   </StrictMode>,
 )
