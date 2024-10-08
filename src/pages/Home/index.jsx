@@ -4,16 +4,14 @@ import api from '../../services/api'
 import {
   Title,
   Container,
-  TopBackgrond,
   Form,
   ContainerInputs,
   Input,
   InputLabel,
-  Button,
 } from "./styles"
 
-import UsersImage from '../../assets/users.png'
-
+import Button from '../../components/Button'
+import TopBackgrond from "../../components/TopBackground"
 function Home() {
   const inputName = useRef()
   const inputAge = useRef()
@@ -29,11 +27,7 @@ function Home() {
 
   return (
     <Container>
-
-      <TopBackgrond>
-        <img src={UsersImage} alt="imagem-usuario" />
-      </TopBackgrond>
-
+      <TopBackgrond />
       <Form>
         <Title>Cadastro de Usuários</Title>
 
@@ -50,7 +44,7 @@ function Home() {
             <InputLabel>
               Idade<span>*</span>
             </InputLabel>
-            <Input type='number' placeholder='Idade do Usuário' ref={inputAge}/>
+            <Input type='number' placeholder='Idade do Usuário' ref={inputAge} />
           </div>
 
         </ContainerInputs>
@@ -59,10 +53,11 @@ function Home() {
           <InputLabel>
             E-mail<span>*</span>
           </InputLabel>
-          <Input type='email' placeholder='E-mail do Usuário' ref={inputEmail}/>
+          <Input type='email' placeholder='E-mail do Usuário' ref={inputEmail} />
         </div>
 
-        <Button type="button" onClick={registerNewUser}>Cadastrar Usuários</Button>
+        <Button type="button" onClick={registerNewUser}>
+          Cadastrar Usuários</Button>
 
       </Form>
     </Container>
