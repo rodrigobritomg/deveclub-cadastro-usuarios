@@ -1,5 +1,6 @@
 import { useRef } from "react"
 import api from '../../services/api'
+
 import {
   Title,
   Container,
@@ -18,10 +19,10 @@ function Home() {
   const inputAge = useRef()
   const inputEmail = useRef()
 
-  async function registerNewuser() {
-    await api.post('/usuarios', {
+  async function registerNewUser() {
+    const data = await api.post('/usuarios', {
       name: inputName.current.value,
-      age: inputAge.current.value,
+      age: parseInt(inputAge.current.value),
       email: inputEmail.current.value
     })
   }
@@ -61,7 +62,7 @@ function Home() {
           <Input type='email' placeholder='E-mail do Usuário' ref={inputEmail}/>
         </div>
 
-        <Button type="button" onClick={registerNewuser}>Cadastrar Usuários</Button>
+        <Button type="button" onClick={registerNewUser}>Cadastrar Usuários</Button>
 
       </Form>
     </Container>
