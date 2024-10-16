@@ -6,13 +6,13 @@ import ListUsers from "./pages/ListUsers";
 
 const router = createBrowserRouter([
     {
-        path:'/',
-        element: <Home/>
+        path: '/',
+        element: <Home />
     },
 
     {
-        path:'/Lista-de-usuarios',
-        element: <ListUsers/>
+        path: '/Lista-de-usuarios',
+        element: <ListUsers />
     }
 
 ])
